@@ -13,6 +13,7 @@ class MainListView(ListView):
     context_object_name = 'main_list'
     template_name = 'mainapp/list.html'
 
+
 class MainCreateView(CreateView):
     model = GalleryCafe
     form_class = GalleryCafeCreationForm
@@ -27,6 +28,7 @@ class MainCreateView(CreateView):
 
     def get_success_url(self):
         return reverse('mainapp:list')
+
 
 class MainDetailView(DetailView):
     model = GalleryCafe
