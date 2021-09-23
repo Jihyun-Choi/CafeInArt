@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+
+    .container {
+      padding: 0;
+      margin: 5, auto;
+    }
+
+     .container a {
+      width: 45%;
+      max-width: 250px;
+    }
+
+    .container div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .container img {
+      width: 30%;
+    }
+
+</style>
+
+    <div class="container">
+        {% for gallerycafe in main_list %}
+          <a href="{% url 'mainapp:detail' pk=gallerycafe.pk %}">
+              <div>
+                  <img src="{{ gallerycafe.image1.url }}" alt="">
+              </div>
+              <div>
+                  <h6>
+                      {{ gallerycafe.name }}
+                  </h6>
+              </div>
+          </a>
+
+       {% endfor %}
+    </div>
+
+{% endblock %}
