@@ -10,4 +10,4 @@ class GalleryCafeCreationForm(ModelForm):
 
     class Meta:
         model = GalleryCafe
-        fields = ['name', 'image1', 'image2', 'image3', 'content']
+        fields = ['name', 'location', 'phone_number', 'start_date', 'end_date', 'image1', 'image2', 'image3', 'content']

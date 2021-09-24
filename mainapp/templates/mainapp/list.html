@@ -13,6 +13,7 @@
     <a class="btn btn-dark write" href="{% url 'mainapp:create' %}">내 카페 등록하기</a>
 </div>
 <div class="list">
+
 {% for gallerycafe in main_list %}
     <div class="list_container">
           <a href="{% url 'mainapp:detail' pk=gallerycafe.pk %}">
@@ -24,8 +25,8 @@
                       {{ gallerycafe.name }}
                   </strong></h6>
                   <div class="detail_info">
-                      <span><span class="material-icons">place</span> 갤러리위치~~로~~길</span>
-                      <span><span class="material-icons">date_range</span> 2021.09.21~2021.11.11</span>
+                      <span><span class="material-icons">place</span> {{ gallerycafe.location }}</span>
+                      <span><span class="material-icons">date_range</span> {{ gallerycafe.start_date }}~{{ gallerycafe.end_date }}</span>
                   </div>
               </div>
           </a>

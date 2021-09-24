@@ -74,6 +74,7 @@ a:hover {
     padding-left: 0.8rem;
 }
 
+
 /* list */
 .list_menu {
     display: flex;
@@ -113,6 +114,8 @@ a:hover {
     width: 15rem;
     height: 10rem;
     object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .list {
@@ -132,3 +135,6 @@ a:hover {
 .detail_info span {
     font-size: 0.8rem;
 }
+
+
+/* detail */
