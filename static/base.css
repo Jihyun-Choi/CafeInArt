@@ -138,3 +138,7 @@ a:hover {
 
 
 /* detail */
+.cafe_title {
+    font-weight: bold;
+    color: #886ab8;
+}
