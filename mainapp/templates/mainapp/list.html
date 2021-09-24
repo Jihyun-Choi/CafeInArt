@@ -3,13 +3,15 @@
 
 {% block content %}
 
-<div class="search_div">
-    <form action="" method="get" class="search_form">
-        <input type="text" placeholder="카페 이름을 입력하세요">
-        <button type="submit" class="material-icons">search</button>
-    </form>
+<div class="list_menu">
+    <div class="search_div">
+        <form action="" method="get" class="search_form">
+            <input type="text" placeholder="카페 이름을 입력하세요">
+            <button type="submit" class="material-icons">search</button>
+        </form>
+    </div>
+    <a class="btn btn-dark write" href="{% url 'mainapp:create' %}">내 카페 등록하기</a>
 </div>
-
 <div class="list">
 {% for gallerycafe in main_list %}
     <div class="list_container">
