@@ -1,22 +1,4 @@
-
-.jihyun_logo{
-    font-family: 'Lobster', cursive;"
-}
-
-.jihyun_footer_button{
-    font-size: .9rem;
-}
-
-.jihyun_footer {
-    text-align:center;
-    margin-bottom: 2rem;
-}
-
-.jihyun_header {
-    text-align:center;
-    margin: 2rem 0;
-}
-
+/* 기본 설정 */
 @media screen and (max-width:500px) {
     html{
         font-size: 13px;
@@ -25,17 +7,138 @@
 
 a {
     color: black;
-}
-
-a:hover {
-     color: black;
     text-decoration: none;
 }
 
-.jihyun_header_nav {
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* header */
+.logo{
+    font-family: 'Lobster', "cursive";
+    color: #886ab8;
+    font-size: 1.5rem;
+}
+
+.logo.big{
+    font-size: 2rem;
+}
+
+.logo_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo_box img{
+    width: 3rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+
+.nav_item {
     margin: 0 0.5rem;
 }
 
-.jihyun_header_navbar{
-    margin: 1rem 0;
+.header_navbar{
+    min-width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+
+/* footer */
+.footer_button{
+    font-size: .9rem;
+}
+
+.footer {
+    text-align:center;
+    margin-bottom: 2rem;
+}
+
+.footer_link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+
+/* list */
+.list_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.search_form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.write {
+    height: 2.5rem;
+}
+
+.list_container {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.list_container a {
+    width: 40%;
+
+}
+
+.list_container .list_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.list_container img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detail_info {
+    text-align: left;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.detail_info span {
+    font-size: 0.8rem;
+}
+
+
+/* detail */
+.cafe_title {
+    font-weight: bold;
+    color: #886ab8;
 }

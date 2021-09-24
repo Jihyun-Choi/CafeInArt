@@ -3,45 +3,35 @@
 
 {% block content %}
 
-<style>
+<div class="list_menu">
+    <div class="search_div">
+        <form action="" method="get" class="search_form">
+            <input type="text" placeholder="카페 이름을 입력하세요">
+            <button type="submit" class="material-icons">search</button>
+        </form>
+    </div>
+    <a class="btn btn-dark write" href="{% url 'mainapp:create' %}">내 카페 등록하기</a>
+</div>
+<div class="list">
 
-    .container {
-      padding: 0;
-      margin: 5, auto;
-    }
-
-     .container a {
-      width: 45%;
-      max-width: 250px;
-    }
-
-    .container div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .container img {
-      width: 30%;
-    }
-
-</style>
-
-    <div class="container">
-        {% for gallerycafe in main_list %}
+{% for gallerycafe in main_list %}
+    <div class="list_container">
           <a href="{% url 'mainapp:detail' pk=gallerycafe.pk %}">
-              <div>
+              <div class="list_content">
                   <img src="{{ gallerycafe.image1.url }}" alt="">
               </div>
-              <div>
-                  <h6>
+              <div class="list_content">
+                  <h6><strong>
                       {{ gallerycafe.name }}
-                  </h6>
+                  </strong></h6>
+                  <div class="detail_info">
+                      <span><span class="material-icons">place</span> {{ gallerycafe.location }}</span>
+                      <span><span class="material-icons">date_range</span> {{ gallerycafe.start_date }}~{{ gallerycafe.end_date }}</span>
+                  </div>
               </div>
           </a>
-
-       {% endfor %}
     </div>
+{% endfor %}
+</div>
 
 {% endblock %}
