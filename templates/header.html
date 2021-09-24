@@ -1,19 +1,22 @@
-
-    <div class="jihyun_header">
-        <div>
-            <a href="{% url 'mainapp:list' %}">
-                <h1 class="jihyun_logo">CafeInArt</h1>
-            </a>
-        </div>
-        <div class="jihyun_header_navbar">
-
-            <a href="{% url 'mainapp:list' %}">
-                <span>Cafe on display</span>
-            </a>
-
-                <span>Artist</span>
-
-                <span>Cafe</span>
-
-        </div>
+{% load static %}
+<div class="header">
+    <div>
+        <a class="logo_box" href="{% url 'mainapp:list' %}">
+            <img src="{% static 'CIA_logo.png' %}" alt="logo">
+            <span class="logo big">CafeInArt</span>
+        </a>
     </div>
+    <div class="header_navbar">
+        <a href="{% url 'mainapp:list' %}">
+            <span class="nav_item">On display</span>
+        </a>
+        |
+        <a href="#">
+            <span class="nav_item">Artist</span>
+        </a>
+        |
+        <a href="#">
+            <span class="nav_item">Cafe</span>
+        </a>
+    </div>
+</div>
