@@ -3,45 +3,32 @@
 
 {% block content %}
 
-<style>
+<div class="search_div">
+    <form action="" method="get" class="search_form">
+        <input type="text" placeholder="카페 이름을 입력하세요">
+        <button type="submit" class="material-icons">search</button>
+    </form>
+</div>
 
-    .container {
-      padding: 0;
-      margin: 5, auto;
-    }
-
-     .container a {
-      width: 45%;
-      max-width: 250px;
-    }
-
-    .container div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .container img {
-      width: 30%;
-    }
-
-</style>
-
-    <div class="container">
-        {% for gallerycafe in main_list %}
+<div class="list">
+{% for gallerycafe in main_list %}
+    <div class="list_container">
           <a href="{% url 'mainapp:detail' pk=gallerycafe.pk %}">
-              <div>
+              <div class="list_content">
                   <img src="{{ gallerycafe.image1.url }}" alt="">
               </div>
-              <div>
-                  <h6>
+              <div class="list_content">
+                  <h6><strong>
                       {{ gallerycafe.name }}
-                  </h6>
+                  </strong></h6>
+                  <div class="detail_info">
+                      <span><span class="material-icons">place</span> 갤러리위치~~로~~길</span>
+                      <span><span class="material-icons">date_range</span> 2021.09.21~2021.11.11</span>
+                  </div>
               </div>
           </a>
-
-       {% endfor %}
     </div>
+{% endfor %}
+</div>
 
 {% endblock %}

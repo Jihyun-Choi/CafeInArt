@@ -73,3 +73,57 @@ a:hover {
     padding-right: 0.8rem;
     padding-left: 0.8rem;
 }
+
+/* list */
+.search_div {
+    text-align: center;
+    margin: 2rem auto;
+
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+}
+
+.list_container {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.list_container a {
+    width: 40%;
+
+}
+
+.list_container .list_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.list_container img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detail_info {
+    text-align: left;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.detail_info span {
+    font-size: 0.8rem;
+}
