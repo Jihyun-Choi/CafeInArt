@@ -18,7 +18,9 @@
     <div class="list_container">
           <a href="{% url 'mainapp:detail' pk=gallerycafe.pk %}">
               <div class="list_content">
+                  {% if gallerycafe.image1 %}
                   <img src="{{ gallerycafe.image1.url }}" alt="">
+                  {% endif %}
               </div>
               <div class="list_content">
                   <h6><strong>

@@ -15,8 +15,8 @@ class GalleryCafe(models.Model):
     end_date = models.DateField(null=True)
 
     image1 = models.ImageField(upload_to='main/', null=False)
-    image2 = models.ImageField(upload_to='main/', null=True)
-    image3 = models.ImageField(upload_to='main/', null=True)
-    image4 = models.ImageField(upload_to='main/', null=True)
+    #image2 = models.ImageField(upload_to='main/', null=True)
+    #image3 = models.ImageField(upload_to='main/', null=True)
+    #image4 = models.ImageField(upload_to='main/', null=True)
 
 
