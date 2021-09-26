@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainapp.urls.MainListView.as_view(), name='main'),
     path('main/', include('mainapp.urls')),
+    path('artist/', include('artistapp.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

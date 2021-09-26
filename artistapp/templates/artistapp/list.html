@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="list_menu">
+    <div class="search_div">
+        <form action="" method="get" class="search_form">
+            <input type="text" placeholder="아티스트 이름을 입력하세요">
+            <button type="submit" class="material-icons">search</button>
+        </form>
+    </div>
+    <a class="btn btn-dark write" href="{% url 'artistapp:create' %}">아티스트 등록하기</a>
+</div>
+<div class="list">
+
+{% for artist in artist_list %}
+    <div class="list_container">
+          <a href="{% url 'artistapp:detail' pk=artist.pk %}">
+              <div class="list_content">
+                  <img src="{{ artist.image1.url }}" alt="">
+              </div>
+              <div class="list_content">
+                  <h6><strong>
+                      {{ artist.name }}
+                  </strong></h6>
+                  <div class="detail_info">
+                      <span><span class="material-icons">category</span> {{ artist.category }}</span>
+                  </div>
+              </div>
+          </a>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

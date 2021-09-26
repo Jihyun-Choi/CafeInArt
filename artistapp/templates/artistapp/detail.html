@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <div>
+        <div style="text-align: center; max-width: 700px; margin: 4rem auto">
+            <img src="{{ target_artist.image1.url }}" alt=""
+                 style="height: 12rem; width: 12rem; border-radius: 20rem; margin-bottom: 2rem; object-fit: cover;">
+            <h1 class="cafe_title">
+                {{ target_artist.name }}
+            </h1>
+            <div class="detail_info">
+                <span><span class="material-icons">category</span> {{ target_artist.category }}</span>
+                <span><span class="material-icons">phone</span> {{ target_artist.phone_number }}</span>
+            </div>
+
+            <hr>
+
+            <img style="width: 30%; border-radius: 1rem; margin:2rem 0;"
+                    src="{{ target_artist.image2.url }}" alt="">
+            <img style="width: 30%; border-radius: 1rem; margin:2rem 0;"
+                    src="{{ target_artist.image3.url }}" alt="">
+            <img style="width: 30%; border-radius: 1rem; margin:2rem 0;"
+                    src="{{ target_artist.image4.url }}" alt="">
+
+            <div class="text-left">
+                {{ target_artist.content | safe }}
+            </div>
+
+            <hr>
+
+        </div>
+    </div>
+
+{% endblock %}
