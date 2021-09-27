@@ -1,0 +1,183 @@
+#imageCanvas1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:200px;
+    width:200px;
+    pointer-events:none;
+}
+
+#imageCanvas2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height:200px;
+    width:200px;
+    pointer-events:none;
+}
+
+#imageCanvas3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:200px;
+    width:200px;
+    pointer-events:none;
+}
+
+#imageCanvas4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height:200px;
+    width:200px;
+    pointer-events:none;
+}
+
+.post_form_container{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+.post_form{
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin: 0 0 10px;
+}
+
+.post_form .title{
+    margin: 0 10px 40px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.post_form .preview{
+    margin-bottom: 30px;
+}
+
+.post_form .preview .upload{
+    max-width: 500px;
+    height: 420px;
+    border: 1px solid #e6e6e6;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.plus_icon1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 70px;
+    left: 70px;
+}
+
+
+.plus_icon1 span{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: dodgerblue;
+
+}
+
+.plus_icon1 span:nth-child(2){
+    transform:rotate(90deg);
+}
+
+.plus_icon2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 70px;
+    right: 70px;
+}
+
+
+.plus_icon2 span{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: dodgerblue;
+
+}
+
+.plus_icon2 span:nth-child(2){
+    transform:rotate(90deg);
+}
+
+.plus_icon3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 70px;
+    left: 70px;
+}
+
+
+.plus_icon3 span{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: dodgerblue;
+
+}
+
+.plus_icon3 span:nth-child(2){
+    transform:rotate(90deg);
+}
+
+.plus_icon4{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 70px;
+    right: 70px;
+}
+
+
+.plus_icon4 span{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: dodgerblue;
+
+}
+
+.plus_icon4 span:nth-child(2){
+    transform:rotate(90deg);
+}
