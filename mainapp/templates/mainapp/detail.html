@@ -4,19 +4,25 @@
 {% block content %}
 
     <div>
-        <div style="text-align: center; max-width: 700px; margin: 4rem auto">
+        <div style="text-align: center; max-width: 700px; margin: 2rem auto">
 
             <h1 class="cafe_title">
                 {{ target_gallerycafe.name }}
             </h1>
-            <div class="detail_info">
-                <span><span class="material-icons">place</span> {{ target_gallerycafe.location }}</span>
-                <span><span class="material-icons">phone</span> {{ target_gallerycafe.phone_number }}</span>
-                <span><span class="material-icons">date_range</span> {{ target_gallerycafe.start_date }} ~ {{ target_gallerycafe.end_date }}</span>
+            <div class="detail_info_container">
+                <div class="detail_info">
+                    <span><span class="material-icons">place</span> {{ target_gallerycafe.location }}</span>
+                    <span><span class="material-icons">phone</span> {{ target_gallerycafe.phone_number }}</span>
+                    <span><span class="material-icons">date_range</span> {{ target_gallerycafe.start_date }} ~ {{ target_gallerycafe.end_date }}</span>
+                </div>
+                <div class="detail_info">
+                    <a href="#"><span><span class="material-icons">map</span> 네이버 지도 앱으로 보기</span></a>
+                </div>
             </div>
 
             <hr>
 
+<<<<<<< HEAD
             <img style="width: 60%; border-radius: 1rem; margin:2rem 0;"
                     src="{{ target_gallerycafe.image1.url }}" alt="">
             <!--
@@ -26,10 +32,21 @@
                     src="{{ target_gallerycafe.image3.url }}" alt="">
             -->
             <div class="text-left">
+=======
+            <div class="detail_content">
+                <h5>아티스트 ____ 님의 작품 전시중</h5>
+                <h6>{{ target_gallerycafe.start_date }} ~ {{ target_gallerycafe.end_date }}</h6>
+                <br>
+>>>>>>> 5f868b215b37b2c6db513097bf91e141c9361fbe
                 {{ target_gallerycafe.content | safe }}
             </div>
 
-            <hr>
+            <img class="detail_img"
+                    src="{{ target_gallerycafe.image1.url }}" alt="">
+            <img class="detail_img"
+                    src="{{ target_gallerycafe.image2.url }}" alt="">
+            <img class="detail_img"
+                    src="{{ target_gallerycafe.image3.url }}" alt="">
 
         </div>
     </div>
